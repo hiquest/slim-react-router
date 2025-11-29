@@ -1,6 +1,6 @@
 {
   "name": "slim-react-router",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "description": "A lightweight alternative to React Router with familiar API - BrowserRouter, HashRouter, Route, Switch, Link, and hooks",
   "author": "",
   "homepage": "",
