@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
   BrowserRouter,
-  HashRouter,
+  // HashRouter,
   Route,
   Switch,
   Link,
@@ -119,23 +119,23 @@ const AppWithBrowserRouter = () => (
 )
 
 // Demo App with HashRouter
-const AppWithHashRouter = () => (
-  <HashRouter>
-    <div style={{ fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
-      <h1 style={{ marginBottom: '1rem' }}>
-        Slim React Router Demo (HashRouter)
-      </h1>
-      <Nav />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/user/:id" component={User} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route component={NotFound} />
-      </Switch>
-    </div>
-  </HashRouter>
-)
+// const AppWithHashRouter = () => (
+//   <HashRouter>
+//     <div style={{ fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
+//       <h1 style={{ marginBottom: '1rem' }}>
+//         Slim React Router Demo (HashRouter)
+//       </h1>
+//       <Nav />
+//       <Switch>
+//         <Route exact path="/" component={Home} />
+//         <Route path="/about" component={About} />
+//         <Route path="/user/:id" component={User} />
+//         <Route path="/dashboard" component={Dashboard} />
+//         <Route component={NotFound} />
+//       </Switch>
+//     </div>
+//   </HashRouter>
+// )
 
 // Toggle between BrowserRouter and HashRouter for demo purposes
 // Change to AppWithHashRouter to test HashRouter
