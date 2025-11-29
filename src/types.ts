@@ -46,9 +46,9 @@ export interface NavLinkProps
   exact?: boolean
   activeClassName?: string
   activeStyle?: React.CSSProperties
-  className?: string | ((isActive: boolean) => string)
-  style?: React.CSSProperties | ((isActive: boolean) => React.CSSProperties)
-  children?: React.ReactNode | ((isActive: boolean) => React.ReactNode)
+  className?: string | ((props: { isActive: boolean }) => string)
+  style?: React.CSSProperties | ((props: { isActive: boolean }) => React.CSSProperties)
+  children?: React.ReactNode | ((props: { isActive: boolean }) => React.ReactNode)
 }
 
 export interface RouterContextValue {
