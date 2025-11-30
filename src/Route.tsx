@@ -9,6 +9,7 @@ export const Route: React.FC<RouteProps> = ({
   component: Component,
   render,
   element,
+  children,
 }) => {
   const context = useContext(RouterContext)
 
@@ -47,6 +48,8 @@ export const Route: React.FC<RouteProps> = ({
     content = element
   } else if (render) {
     content = render({ match })
+  } else if (children) {
+    content = children
   }
 
   return <RouteContext.Provider value={match}>{content}</RouteContext.Provider>

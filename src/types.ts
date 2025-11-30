@@ -28,6 +28,7 @@ export interface RouteProps {
   component?: React.ComponentType<any>
   render?: (props: { match: Match | null }) => React.ReactNode
   element?: React.ReactElement
+  children?: React.ReactNode
 }
 
 export interface SwitchProps {
@@ -47,8 +48,12 @@ export interface NavLinkProps
   activeClassName?: string
   activeStyle?: React.CSSProperties
   className?: string | ((props: { isActive: boolean }) => string)
-  style?: React.CSSProperties | ((props: { isActive: boolean }) => React.CSSProperties)
-  children?: React.ReactNode | ((props: { isActive: boolean }) => React.ReactNode)
+  style?:
+    | React.CSSProperties
+    | ((props: { isActive: boolean }) => React.CSSProperties)
+  children?:
+    | React.ReactNode
+    | ((props: { isActive: boolean }) => React.ReactNode)
 }
 
 export interface RouterContextValue {

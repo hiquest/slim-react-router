@@ -15,7 +15,7 @@
 - Zero dependencies
 - Familiar API if you've used React Router (though not a 1:1 match)
 - TypeScript support
-- Works with both BrowserRouter and HashRouter
+- Browser-based and hash-based routing
 - All the essentials: routes, links, navigation, hooks, etc.
 
 ## Installation
